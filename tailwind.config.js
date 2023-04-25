@@ -15,7 +15,7 @@ module.exports = {
       'white' : '#fff'
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['BlinkMacSystemFont', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {
@@ -28,4 +28,10 @@ module.exports = {
       }
     }
   },
+  plugins: [
+    require('flowbite/plugin')
+  ],
+  content: [
+    "./node_modules/flowbite.{js,ts}"
+  ],
 }
