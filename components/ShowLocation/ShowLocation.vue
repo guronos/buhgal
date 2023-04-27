@@ -33,6 +33,6 @@ data: () => ({
 <style>
 .map {
     height: 50vh;
-    width: 90%;
+    width: 100%;
 }
 </style>

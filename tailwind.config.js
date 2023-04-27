@@ -15,7 +15,7 @@ module.exports = {
       'white' : '#fff'
     },
     fontFamily: {
-      sans: ['BlinkMacSystemFont', 'sans-serif'],
+      sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {

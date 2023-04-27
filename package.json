@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/ngrok": "^2.0.0",
     "core-js": "^3.25.3",
     "flowbite": "^1.6.5",
     "nuxt": "^2.15.8",
@@ -18,7 +19,11 @@
     "vue-yandex-maps": "^0.11.14"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@iconify/json": "^2.2.56",
     "@nuxtjs/tailwindcss": "^5.3.3",
-    "postcss": "^8.4.17"
+    "postcss": "^8.4.17",
+    "unplugin-icons": "^0.16.1"
   }
 }
