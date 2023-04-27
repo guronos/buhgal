@@ -2,7 +2,7 @@
   <div>
     <ul class="list-none">
         <h3 class="text-6xl text-gray-900 text-center">Бухгалтерские услуги</h3> 
-    <transition name="service-animation" v-for="(item, idx) in accountingServices" :key="idx">
+    <transition name="service-animation" v-for="item in accountingServices" :key="item.number">
     <li class="bg-gray-100 mb-4" v-if="item.show"><div>{{ item.title }}</div><div>{{ item.body }}</div></li></transition>
     <!-- <transition name="service-animation"><li class="bg-red-100" v-if="showItems">Услуга 2</li></transition>
     <transition name="service-animation"><li class="bg-red-100" v-if="showItems">Услуга 3</li></transition> -->
