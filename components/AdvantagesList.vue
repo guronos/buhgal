@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-around">
-    <div class="wrap-img mr-4 shadow-xl"><img src="../../assets/buhgalter-preimucshestva.jpg" alt="Изображение демонстрирующее сотрудничество" class="rounded"></div>
+    <div class="wrap-img mr-4 shadow-xl"><img src="@/assets/buhgalter-preimucshestva.jpg" alt="Изображение демонстрирующее сотрудничество" class="rounded"></div>
   <div><span class="text-6xl text-gray-900">Список наших преимуществ:</span> 
   <ul class="my-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
     <li class="flex flex-col items-center space-x-3 text-3xl text-gray-900" v-for="(item, indx) in advantages" :key="indx">
