@@ -3,11 +3,11 @@
     <div>
 <h3 class="text-3xl text-white mb-3 text-center">Контакты</h3> </div>
 <div class="flex justify-center space-x-36">
-  <TelegramIcon style="font-size: 2em" />
-  <WhatsappIcon style="font-size: 2em" />
-  <div class="wrap-icon-call flex items-center justify-center">
+  <a href="https://t.me/veselovskayaolga"><TelegramIcon style="font-size: 2em" /></a>
+  <a href="https://wa.me/79383116192"><WhatsappIcon style="font-size: 2em" /></a>
+  <a href="tel:+79383116192"><div class="wrap-icon-call flex items-center justify-center">
     <PhoneIcon style="font-size: 1.5em; color : LimeGreen" />
-  </div>
+  </div></a>
   
 </div>
 <div class="flex flex-col items-start self-center my-4 contact-info text-white">
@@ -78,7 +78,10 @@ console.log('hello')
 .wrap-icon-call {
   height: 2.6rem;
   width: 2.6rem;
-  border: 2px solid LimeGreen;
+  border: 2px solid rgb(244, 245, 244);
   border-radius: 10rem;
+}
+.wrap-icon-call:hover {
+  border: 2px solid LimeGreen;
 }
 </style>

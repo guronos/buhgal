@@ -15,7 +15,7 @@ module.exports = {
       'white' : '#fff'
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Roboto', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {

@@ -1,6 +1,8 @@
 <template>
+    <div><h3 class="text-5xl text-center text-gray-900 mb-4">Стоимость услуг</h3> 
   <div class="flex justify-around items-center">
-<div class="wrap-price"><h3 class="text-5xl text-center text-gray-900 mb-4">Стоимость услуг</h3> 
+    
+<div class="wrap-price">
     <div class="relative overflow-x-auto">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-blue-400 dark:bg-blue-700 dark:text-gray-400">
@@ -28,7 +30,7 @@
 
 </div>
 <div class="wrap-img shadow-xl"><img src="@/assets/uslugi-buhgaltera.jpg" alt="Прайс на бухгалтерские услуги" class="rounded"></div>
-  </div>
+  </div></div>
 </template>
 
 <script>
