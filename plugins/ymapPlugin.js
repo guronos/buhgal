@@ -7,6 +7,6 @@ lang: 'ru_RU',
 coordorder: 'latlong',
 enterprise: false,
 version: '2.1' 
-} // настройки плагина
+} 
 
 Vue.use(YmapPlugin, settings);

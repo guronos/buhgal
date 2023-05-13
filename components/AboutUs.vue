@@ -1,14 +1,14 @@
 <template>
-  <div class="mb-12 text-center flex flex-col items-center">
-    <h3 class="text-5xl mb-4 text-gray-900">О нас</h3>
-    <div class="flex flex-row justify-around">
+  <div class="text-center flex flex-col items-center">
+    <h3 class="text-5xl mb-8 text-gray-900">О нас</h3>
+    <div class="flex flex-row justify-around items-center">
     
-    <div >
-    <p>lorem ipsum</p>
-    <p>lorem ipsum</p>
-    <p>lorem ipsum</p>
+    <div class="text-justify text-2xl">
+    <p class="p-4">Наша компания оказывает бухгалтерские услуги  организациям, индивидуальным предпринимателям, а также физическим лицам.</p>
+    <p class="p-4">Применяя свои знания, мы оказываем надежную поддержку бизнеса, позволяющую нашим клиентам экономить большое количество времени и ресурсов, и направлять их на развитие бизнеса. Стоимость обслуживания в несколько раз ниже содержания бухгалтера в компании.</p>
+    <p class="p-4">Мы применяем индивидуальный подход к каждому клиенту, а разнообразие оказываемых услуг обеспечивают заинтересованность в долгосрочном сотрудничестве.</p>
 </div>
-<div class="wrap-img mr-4 shadow-xl"><img src="@/assets/buhgalteriya-info.png" alt="Изображение демонстрирующее сотрудничество" class="rounded"></div>
+<div class="mr-4 shadow-xl"><img src="@/assets/buhgalteriya-info.png" alt="Изображение демонстрирующее сотрудничество" class="rounded"></div>
     </div>
     </div>
 </template>

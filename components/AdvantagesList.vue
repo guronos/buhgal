@@ -1,11 +1,11 @@
 <template>
-  <div><h3 class="text-5xl mb-4 text-gray-900 text-center">Список наших преимуществ:</h3> 
+  <div><h3 class="text-5xl mb-8 text-gray-900 text-center">Список наших преимуществ:</h3> 
   <div class="flex flex-row justify-around">
     <div class="wrap-img mr-4 shadow-xl"><img src="@/assets/buhgalter-preimucshestva.jpg" alt="Изображение демонстрирующее сотрудничество" class="rounded"></div>
 
   <ul class="my-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
-    <li class="flex flex-col items-center space-x-3 text-3xl text-gray-900" v-for="(item, indx) in advantages" :key="indx">
-      <div class="text-left w-[100%]"><span class="flex items-center font-semibold"><ApprovedIcon />{{item.title}}</span>
+    <li class="flex flex-col items-center space-x-3 text-2xl text-gray-900" v-for="(item, indx) in advantages" :key="indx">
+      <div class="text-left w-[100%]"><h4 class="flex items-center font-semibold"><ApprovedIcon />{{item.title}}</h4>
     <span class="font-light text-base text-gray-700">{{ item.body }}</span></div>
     </li>
   </ul>

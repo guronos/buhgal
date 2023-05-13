@@ -1,9 +1,8 @@
 <template>
-    <div><h3 class="text-5xl text-center text-gray-900 mb-4">Стоимость услуг</h3> 
-  <div class="flex justify-around items-center">
+    <div><h3 class="text-5xl text-center text-gray-900 mb-8">Стоимость услуг</h3> 
+  <!-- <div class="flex justify-around items-center"> -->
     
-<div class="wrap-price">
-    <div class="relative overflow-x-auto">
+<div >
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-blue-400 dark:bg-blue-700 dark:text-gray-400">
             <tr>
@@ -16,21 +15,28 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-blue-100 border-b dark:bg-gray-800 dark:border-gray-700" v-for="elem in priceList" :key="elem.number">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tr class="bg-blue-100 border-b dark:bg-gray-800 dark:border-gray-700" v-for="(elem, id) in priceList" :key="id">
+               <template v-if="elem.service">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-normal dark:text-white">
                    {{ elem.service }}
                 </th>
                 <td class="px-6 py-4">
                     {{ elem.prise }}
                 </td>
+            </template>
+                <template v-else>
+                    <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
+                   {{ elem.serviceGroup }}
+                </th><th></th>
+                </template>
             </tr>
         </tbody>
     </table>
 </div>
 
-</div>
-<div class="wrap-img shadow-xl"><img src="@/assets/uslugi-buhgaltera.jpg" alt="Прайс на бухгалтерские услуги" class="rounded"></div>
-  </div></div>
+<!-- </div> -->
+  <!-- </div> -->
+  </div>
 </template>
 
 <script>
@@ -40,20 +46,55 @@ data (){
     return {
         priceList : [
             {
-                'number' : '1',
-                'service' : 'Подготовка декларации для ИП',
-                'prise' : '999 руб.'
+                'service' : 'Нулевые отчеты',
+                'prise' : '500 руб.'
             },
             {
-                'number' : '2',
-                'service' : 'Подготовка декларации для ООО/АО',
-                'prise' : '9999 руб.'
+                'service' : 'Составление заявление на Патент',
+                'prise' : '500 руб.'
             },
             {
-                'number' : '3',
-                'service' : 'Подготовка декларации для имущественного вычета',
-                'prise' : '599 руб.'
-            }
+                'serviceGroup' : 'Ведение бухгалтерского учета на Упрощенной системе налогообложения (УСН) ДОХОДЫ',
+            },
+            {
+                'service' : 'Без работников',
+                'prise' : 'от 1000 руб. в месяц'
+            },
+            {
+                'service' : 'С работниками (за каждого нового сотрудника – 500 руб.)',
+                'prise' : 'от 2 500 руб. в месяц'
+            },
+            {
+                'serviceGroup' : 'Ведение бухучета на Упрощенной системе налогообложения (УСН) ДОХОДЫ - РАСХОДЫ',
+            },
+            {
+                'service' : 'Без работников',
+                'prise' : 'от 1000 руб.'
+            },
+            {
+                'service' : 'С работниками (за каждого нового сотрудника - 500 руб.)',
+                'prise' : 'от 2000 руб.'
+            },
+            {
+                'serviceGroup' : 'Ведение бухгалтерского учета на Общей системе налогообложения',
+            },
+            {
+                'service' : 'Без работников',
+                'prise' : 'от 1000 руб.'
+            },
+            {
+                'service' : 'С работниками (за каждого нового сотрудника - 500 руб.)',
+                'prise' : 'от 2000 руб.'
+            },
+            {
+                'service' : 'Заполнений деклараций 3-НДФЛ',
+                'prise' : '500 руб.'
+            },
+            {
+                'service' : 'Внесение изменений в учредительные документы \
+                (смена адреса, наименования, директора, видов деятельности, паспортных данных)',
+                'prise' : '3000 руб.'
+            },
         ]
     }
 }
