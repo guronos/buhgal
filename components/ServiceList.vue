@@ -131,7 +131,7 @@ transform: translateX(-100%);
   flex-direction: row-reverse;
 }  */
 ul {
-    min-height: 70vh;
+    min-height: 65vh;
 }
 li {
   max-width: 95%;

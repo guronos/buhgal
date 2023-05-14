@@ -5,9 +5,7 @@
 <div class="flex justify-center space-x-36">
   <a href="https://t.me/veselovskayaolga"><TelegramIcon style="font-size: 2em" /></a>
   <a href="https://wa.me/79383116192"><WhatsappIcon style="font-size: 2em" /></a>
-  <a href="tel:+79383116192"><div class="wrap-icon-call flex items-center justify-center">
-    <PhoneIcon style="font-size: 1.5em; color : LimeGreen" />
-  </div></a>
+  <a href="tel:+79383116192"><img src="@/assets/svg/PhoneIcon.svg" width="40" alt=""></a>
   
 </div>
 <div class="flex flex-col items-start self-center my-4 contact-info text-white">
@@ -78,8 +76,9 @@ console.log('hello')
 .wrap-icon-call {
   height: 2.6rem;
   width: 2.6rem;
-  border: 2px solid rgb(244, 245, 244);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10rem;
+  background: linear-gradient(#635f5f, rgba(107, 114, 128, 1));
 }
 .wrap-icon-call:hover {
   border: 2px solid LimeGreen;
