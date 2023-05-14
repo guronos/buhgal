@@ -12,8 +12,6 @@
     </div>
       
     </li></transition>
-    <!-- <transition name="service-animation"><li class="bg-red-100" v-if="showItems">Услуга 2</li></transition>
-    <transition name="service-animation"><li class="bg-red-100" v-if="showItems">Услуга 3</li></transition> -->
 </ul>
   </div>
 </template>
@@ -56,7 +54,6 @@ computed : {
           threshold: 1
         };
         const observer = new IntersectionObserver(this.handleIntersect, options);
-        console.log('its job', this.$el)
         observer.observe(this.$el);
       },getItem(){
         if (this.showItems) {
@@ -66,7 +63,6 @@ computed : {
         }
     },
 }, methods:{
-    
     showServiceItem() {
         this.accountingServices.forEach(i=>setTimeout(()=>i.show=true, i.number * 500))
       },
@@ -74,7 +70,6 @@ computed : {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             this.showServiceItem();
-            console.log(this.$el.getElementsByTagName('li'))
               observer.unobserve(this.$el);
           }
         });
@@ -82,54 +77,27 @@ computed : {
 }, mounted(){
     if (process.client) {
     if (window["IntersectionObserver"]) {
-        console.log('lazy if', this.$el)
         this.createObserver;
         
       } else {
         this.showServiceItem();
-        console.log('lazy else')
       }
   }}
 }
 </script>
 
 <style scoped>
-/* .service-animation {
-    animation: myAnim 2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s 1 normal forwards;
-}
-@keyframes myAnim {
-	0% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-} */
 .service-animation-enter-active {
   transition: all 1.5s ease;
-  /* transition-delay: 1s; */
 }
-
-/* .service-animation-enter-active:first-of-type + .service-animation-enter-active {
-transform: translateX(-100%);
-  opacity: 0;
-  color: red;
-} */
 .service-animation-enter
-/* .slide-fade-leave-active до версии 2.1.8 */ {
+{
   transform: translateX(100%);
-  /* transition-delay: 1s; */
   opacity: 0;
 }
 .service-animation-enter:nth-child(even){
   transform: translateX(-100%);
 }
-/* .item-block:nth-child(even) {
-  flex-direction: row-reverse;
-}  */
 ul {
     min-height: 65vh;
 }

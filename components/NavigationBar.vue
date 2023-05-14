@@ -2,7 +2,7 @@
   <nav class="bg-white sticky w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 navigation-bar">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center">
-        <img src="@/assets/buhgalter-logo.svg" width="30px" class="h-10 mr-3" alt="Логотип" />
+        <img src="@/assets/svg/buhgalter-stavropol-logo.svg" width="50px" class="h-10 mr-3" alt="Логотип" />
         <span class="self-center text-3xl font-extrabold whitespace-nowrap dark:text-white">Бухгалтерские услуги</span>
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -44,5 +44,26 @@ methods:{
 </script>
 
 <style>
+li a {
+	position: relative;
+	cursor: pointer;
+	line-height: 1.5;
 
+
+}
+li a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #2a80c7; 
+	content: "";
+	transition: width 0.1s ease-out; 
+}
+
+li a:hover:after,
+li a:focus:after {
+	width: 100%; 
+}
 </style>
