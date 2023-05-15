@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'buhgal',
+    title: 'Бухгалтерские услуги в Ставрополе',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'Бухгалтерские услуги в Ставрополе', content: 'Наша компания оказывает бухгалтерские услуги  организациям, индивидуальным предпринимателям, а также физическим лицам, как по Ставрополю, так и за его пределами.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -35,15 +35,49 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/ngrok',
     ['unplugin-icons/nuxt', { /* options */ }],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'nuxt-precompress'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
+  nuxtPrecompress: {
+    enabled: true, // Enable in production
+    report: false, // set true to turn one console messages during module init
+    test: /\.(js|css|html|txt|xml|svg)$/, // files to compress on build
+    // Serving options
+    middleware: {
+      // You can disable middleware if you serve static files using nginx...
+      enabled: true,
+      // Enable if you have .gz or .br files in /static/ folder
+      enabledStatic: true, 
+      // Priority of content-encodings, first matched with request Accept-Encoding will me served
+      encodingsPriority: ['br', 'gzip'],
+    },
+    gzip: {
+      // should compress to gzip?
+      enabled: true,
+      // compression config
+      // https://www.npmjs.com/package/compression-webpack-plugin
+      filename: '[path].gz[query]', // middleware will look for this filename
+      threshold: 10240,
+      minRatio: 0.8,
+      compressionOptions: { level: 9 },
+    },
+    brotli: {
+      // should compress to brotli?
+      enabled: true,
+      // compression config
+      // https://www.npmjs.com/package/compression-webpack-plugin
+      filename: '[path].br[query]', // middleware will look for this filename
+      compressionOptions: { level: 11 },
+      threshold: 10240,
+      minRatio: 0.8,
+    },
+  }
 }

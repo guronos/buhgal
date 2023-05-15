@@ -1,7 +1,7 @@
 <template>
-  <div><h3 class="text-5xl mb-8 text-gray-900 text-center">Список наших преимуществ:</h3> 
-  <div class="flex flex-row justify-around">
- <figure class="advantages-list__card" v-for="item in advantages" :key="item.id">
+  <div><h3 class="text-3xl md:text-5xl md:mb-8 mb-2 text-gray-900 font-semibold mx-auto text-center">Список наших преимуществ:</h3> 
+  <div class="flex md:flex-row flex-col justify-around">
+ <figure class="advantages-list__card md:max-w-[30%] max-w-[95%] shadow-xl" v-for="item in advantages" :key="item.id">
   <div class="advantages-list__image-wrapper bg-center" :style="`background-image: url(${getImage(item.img)});`"></div>
   <figcaption>
     <h3>{{ item.title }}</h3>
@@ -53,7 +53,7 @@ data () {
 
 .advantages-list__image-wrapper {
 width: 100%;
-height: 40vh;
+height: 400px;
 background-size: cover;
 
 
@@ -63,9 +63,9 @@ background-size: cover;
   display: inline-block;
   font-size: 16px;
   margin: 10px 5px;
-  max-width: 30%;
+  /* max-width: 30%; */
   min-width: 10%;
-  height: 40vh;
+  max-height: 40vh;
   overflow: hidden;
   position: relative;
   text-align: right;

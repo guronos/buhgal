@@ -2,13 +2,13 @@
   <div class="flex flex-col">
     <div>
 <h3 class="text-3xl text-white mb-3 text-center">Контакты</h3> </div>
-<div class="flex justify-center space-x-36">
-  <a href="https://t.me/veselovskayaolga"><TelegramIcon style="font-size: 2em" /></a>
-  <a href="https://wa.me/79383116192"><WhatsappIcon style="font-size: 2em" /></a>
-  <a href="tel:+79383116192"><img src="@/assets/svg/PhoneIcon.svg" width="40" alt=""></a>
+<div class="flex justify-center">
+  <a href="https://t.me/veselovskayaolga" class="mr-24 md:mr-36"><TelegramIcon style="font-size: 2em" /></a>
+  <a href="https://wa.me/79383116192" class="mr-24 md:mr-36"><WhatsappIcon style="font-size: 2em" /></a>
+  <a href="tel:+79383116192" class="contents"><img src="@/assets/svg/PhoneIcon.svg" class="w-[40px]" alt="Иконка телефонного звонка"></a>
   
 </div>
-<div class="flex flex-col items-start self-center my-4 contact-info text-white">
+<div class="flex flex-col items-start self-center my-4 md:contact-info text-white">
 <div class="flex items-center space-x-8 mb-4">
   <div class="wrap-icon flex items-center justify-center">
     <GeoIcon class="icon" />
@@ -44,11 +44,6 @@ import MailIcon from '~icons/material-symbols/mark-email-read-outline';
 export default {
 name: 'ContactList',
 components : { TelegramIcon, WhatsappIcon, PhoneIcon, GeoIcon, ClockIcon, MailIcon },
-mounted(){
-  if (process.client) {
-console.log('hello')
-  }
-}
 }
 </script>
 

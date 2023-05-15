@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h2 class="text-5xl mb-8 text-gray-900 text-center">Бухгалтерские услуги</h2> 
+    <h2 class="text-3xl md:text-5xl md:mb-8 mb-2 text-gray-900 font-semibold mx-auto text-center">Бухгалтерские услуги</h2> 
     <ul class="list-none">
     <transition name="service-animation" v-for="item in accountingServices" :key="item.number">
     <li class="bg-blue-200 mb-4 mx-auto flex items-center px-4 item-block" v-if="item.show">
       <div v-html="item.svg"></div>
-      <div class="w-[100%] flex flex-col ">
+      <div class="w-[100%] h-[100%] flex flex-col justify-center items-center">
         <h4 class="text-2xl text-center">{{ item.title }}</h4>
       <hr class="h-px w-[40%] mx-auto my-1 bg-gray-200 border-0 dark:bg-gray-700">
       <p class="text-center px-8">{{ item.body }}</p>
@@ -99,11 +99,20 @@ computed : {
   transform: translateX(-100%);
 }
 ul {
-    min-height: 65vh;
+min-height: 650px;
 }
 li {
   max-width: 95%;
   height: 200px;
   border-radius: 2rem;
+}
+@media (max-width: 980px) {
+  ul {
+min-height: 65vh;
+height:auto
+}
+  li {
+    height: auto;
+  }
 }
 </style>

@@ -1,9 +1,8 @@
 <template>
-    <div><h3 class="text-5xl text-center text-gray-900 mb-8">Стоимость услуг</h3> 
-  <!-- <div class="flex justify-around items-center"> -->
+    <div><h3 class="text-3xl md:text-5xl md:mb-8 mb-2 text-gray-900 font-semibold text-center">Стоимость услуг</h3> 
     
-<div >
-    <table class="w-[70%] text-sm text-left text-gray-500 dark:text-gray-400 mx-auto">
+<div>
+    <table class="md:w-[70%] w-[95%] 2xl:w-[95%] text-sm text-left text-gray-500 dark:text-gray-400 mx-auto shadow-xl">
         <thead class="text-xs text-gray-700 uppercase bg-blue-400 dark:bg-blue-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="px-6 py-3">
@@ -19,7 +18,7 @@
            
                <template v-if="elem.serviceGroup">
                 <tr :key="elem.id" class="bg-blue-100 border-b dark:bg-gray-800 dark:border-gray-700" >
-                <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-normal dark:text-white">
                    {{  elem.serviceGroup }}
                 </th><th></th>
             </tr>
