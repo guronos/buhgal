@@ -1,15 +1,14 @@
 <template>
     <div><h3 class="text-3xl md:text-5xl md:mb-8 mb-2 text-gray-900 font-semibold text-center">Стоимость услуг</h3> 
-    
 <div>
     <table class="md:w-[70%] w-[95%] 2xl:w-[95%] text-sm text-left text-gray-500 dark:text-gray-400 mx-auto shadow-xl">
         <thead class="text-xs text-gray-700 uppercase bg-blue-400 dark:bg-blue-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="px-6 py-3">
-                   Услуга
+                   Услуга*
                 </th>
                 <th scope="col" class="w-[22%] px-6 py-3">
-                    Цена
+                    Цена*
                 </th>
             </tr>
         </thead>
@@ -45,6 +44,9 @@
         </template>
         </tbody>
     </table>
+    <div class="md:w-[70%] w-[95%] 2xl:w-[95%] text-sm text-left text-gray-500 dark:text-gray-400 mx-auto mt-4">
+        * Текст не является публичной офертой. Указанная стоимость оказания услуг является предварительной, для получения более точной информации свяжитесь с нами через раздел Контакты.
+    </div>
 </div>
 
 <!-- </div> -->

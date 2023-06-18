@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center">
-      <h3 class="text-3xl md:mb-8 mb-2 text-gray-900 font-semibold text-white">Наше местоположение</h3>
+      <h3 class="text-3xl md:mb-8 mb-2 text-center text-gray-900 font-semibold text-white">Наше местоположение</h3>
         <client-only>
  <yandex-map 
     :coords="coords"

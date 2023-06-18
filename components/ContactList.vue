@@ -13,7 +13,7 @@
   <div class="wrap-icon flex items-center justify-center">
     <GeoIcon class="icon" />
   </div>
-<div>г.Ставрополь</div> 
+<div>г.Ставрополь, ул. Осипенко</div> 
 </div>
 <div class="flex items-center space-x-8 mb-4">
   <div class="wrap-icon flex items-center justify-center">
@@ -25,12 +25,12 @@
   <div class="wrap-icon flex items-center justify-center">
     <MailIcon class="icon" />
   </div>
-<div>E-mail: buhgalter@mail.ru</div> </div> 
+<div>E-mail: b-stav@mail.ru</div> </div> 
 <div class="flex items-center space-x-8 mb-4">
   <div class="wrap-icon flex items-center justify-center">
     <PhoneIcon class="icon" />
   </div>
-<div>Телефон: +7-999-999-99-99</div> </div> 
+<div>Телефон: +7 938-311-61-92</div> </div> 
 </div></div>
 </template>
 

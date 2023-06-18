@@ -11,8 +11,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'Бухгалтерские услуги в Ставрополе', content: 'Наша компания оказывает бухгалтерские услуги  организациям, индивидуальным предпринимателям, а также физическим лицам, как по Ставрополю, так и за его пределами.' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Наша компания оказывает бухгалтерские услуги  организациям, индивидуальным предпринимателям, а также физическим лицам, как по Ставрополю, так и за его пределами.' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: "keywords", content: "бухгалтер, декларация, 3-НДФЛ, отчет, патент, УСН, бухгалтерия, бухучет, бухгалтерские услуги, бухгалтерские услуги в Ставпрополе, ведение налогового учета, бухгалтерский учет, кадровый учет, заполнение 3-НДФЛ, заполнение декларации Ставрополь, оптимизация налогов, бухгалтерские отчеты, составление заявления на патент, бухгалтерский учет на УСН, Упрощенной системе налогообложения, бухучет, бухгалтерия" },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -40,9 +41,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-precompress'
+    'nuxt-precompress',
+    '@nuxtjs/yandex-metrika'
   ],
-
+  yandexMetrika: {
+    id: '93585175',
+    // ...
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },

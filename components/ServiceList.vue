@@ -92,11 +92,12 @@ computed : {
 }
 .service-animation-enter
 {
-  transform: translateX(100%);
+  transform: translateX(10%);
   opacity: 0;
 }
 .service-animation-enter:nth-child(even){
-  transform: translateX(-100%);
+  transform: translateX(-10%);
+  opacity: 0;
 }
 ul {
 min-height: 650px;

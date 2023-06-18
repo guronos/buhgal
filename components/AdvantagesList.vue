@@ -63,13 +63,12 @@ background-size: cover;
   display: inline-block;
   font-size: 16px;
   margin: 10px 5px;
-  /* max-width: 30%; */
   min-width: 10%;
   max-height: 40vh;
   overflow: hidden;
   position: relative;
   text-align: right;
-  width: 100%;
+  width: 95%;
 }
 
 .advantages-list__card *,
@@ -198,5 +197,12 @@ background-size: cover;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-
+@media (max-width: 560px) {
+  .advantages-list__card {
+    margin: 10px auto;
+  }
+  .advantages-list__card h3 {
+    font-size: 20px;
+  }
+}
 </style>
