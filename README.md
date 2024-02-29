@@ -1,5 +1,5 @@
 # buhgal
-
+Лендинг Nuxt 2
 ## Build Setup
 
 ```bash
